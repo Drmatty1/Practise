@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+    int i,j,k=1,n=6,t;
+    printf("Enter No Of Rows : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        if(i>1){  k=k+n-i+2; t=k;}
+        for(j=1;j<=i;j++){
+            if(j==1)
+              printf("%d ",k);
+            else
+                printf("%d ",t=t-(n-(i-j+1)));
+        }
+     printf("\n");
+    }
+}
